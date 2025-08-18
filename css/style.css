@@ -1,0 +1,253 @@
+:root{
+    --brand: #B91F33;
+    --brand-light: #f32944;
+    --brand-dark: #3b0910;
+    --primary: #101417;
+    --gray-100: #E1E1E1;
+    --gray-600: #666666;
+}
+html{
+    scroll-behavior: smooth;
+}
+#academia{
+    scroll-margin-top: 180px;
+}
+#planos{
+    scroll-margin-top: 110px;
+}
+#fale-conosco{
+    scroll-margin-top: 140px;
+}
+body{
+    background-color: var(--primary);
+     font-family: "Teko", sans-serif;
+}
+*{/*reset*/
+    margin:0;
+    padding: 0;
+    text-transform: uppercase;
+}
+h1{
+    color: var(--gray-100);
+    font-size: 96px;
+    line-height: 90%;
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: var(--gray-100);
+    font-size: 18px;
+    line-height: 120%;
+    margin: 24px 0;
+}
+h2{
+    color: #fff;
+    line-height: 100%;
+    font-size: 40px;
+}
+img{
+    display: block;
+}
+h3, .price{
+    font-weight: 700;
+    font-size: 32px;
+    color: #ffffff;
+    line-height: 100%;
+}
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    border-top: solid 5px var(--brand);
+    height: 100px;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 95%;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 111px;
+}
+.menu a:hover{
+    color: var(--brand);
+    text-decoration: underline;
+}
+.banner{
+    height: 550px;
+    background-image: url(../img/background.webp);
+    background-size: cover;
+    background-position: top center;
+    height: calc(100vh - 105px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.banner p{
+    font-size: 24px;
+}
+.btn{
+    color: #fff;
+    background-color: var(--brand);
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 60px 11px;
+    border-radius: 3px;
+    transition: 300ms ease;
+}
+.btn:hover{
+    background-color: var(--brand-light);
+    border-radius: 10px;
+}
+.btn:active{
+    background-color: var(--brand-dark);
+    transform: scale(0.95);
+}
+.academia .container{
+    margin: 100px auto;
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+}
+.text h2{
+    color:#000;
+}
+.faca-parte .container{
+    padding: 37px 0;
+    position: relative;
+}
+.text{
+    width: calc(100% - 200px);
+    max-width: 850px;
+}
+.text p{
+    color: var(--gray-600);
+    margin-bottom: 0;
+}
+.faca-parte{
+    background-color: var(--gray-100);
+}
+.img-atleta{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.planos .container{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.all-cards{
+    display: flex;
+    column-gap: 24px;
+}
+.card-mensal{
+    background-image: url(../img/bg_plano1.webp);
+}
+.card-semestral{
+    background-image: url(../img/bg_plano3.webp);
+}
+.card{
+    border: solid 1px var(--brand);
+    padding: 30px;
+}
+.card-anual{
+    background-image: url(../img/bg_plano2.webp);
+    border-color: #E0E34C;
+}
+.card-anual .btn-plan:hover{
+    background-color: rgba(224, 227, 76, 0.438);
+    transform: scale(1.05);
+    color: var(--primary)
+}
+.card-anual .btn-plan{
+    border-color: #E0E34C;
+}
+
+.card-anual .price, .card-anual h3{
+    color: #E0E34C;
+}
+.card ul{
+    list-style-position: inside;
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    font-size: 18px;
+    color: var(--gray-100);
+}
+.btn-plan{
+    border: solid 2px var(--brand);
+    text-decoration: none;
+    color: #ffff;
+    border-radius: 3px;
+    display:block;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    transition: 200ms;
+}
+.btn-plan:hover{
+    background-color:rgba(243, 41, 68, 0.521);
+    transform: scale(1.05);
+}
+.paragraph{
+    width: 100%;
+    max-width: 655px;
+}
+.mapa iframe{
+    width: 100%;
+}
+.conteudo-footer{
+    background-color: var(--brand);  
+    padding: 15px 220px;
+    margin-top: 50px; 
+    margin-bottom: 35px;
+}
+.conteudo-footer p{
+    margin: 0;
+    text-align: center;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+    margin-bottom: 45px;
+}
+.social a:hover{
+    transform: translateY(-5px);
+    transition: 300ms;
+}
+    @media (max-width: 1200px){
+        h1{
+            font-size: 36px;
+        }
+        .menu{
+            display: none;
+        }
+        .banner{
+            height: 420px;
+        }
+        .banner p{
+            font-size: 18px;
+        }
+        .barra{
+            width: 40px;
+            height: 3px;
+            margin-bottom: 4px;
+            background-color: #fff;
+        }
+    }
+    @media(max-width: 600px){
+        
+    }
