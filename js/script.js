@@ -8,6 +8,7 @@
 
 var btnMenu = document.querySelector('.btn-menu');
 var menu = document.querySelector('.menu');
+var fundoPopup = document.querySelector('.fundo');
 
 //console.log(btnMenu);
 //console.log(menu);
@@ -28,4 +29,10 @@ function fecharMenu(){
 
 //Eventos -> Gatilhos/Ação do usuário
 btnMenu.addEventListener('click',manipularMenu);
-menu.addEventListener('click',fecharMenu);
+menu.addEventListener('click', function(){
+    menu.classList.remove('show')
+    btnMenu.classList.remove('x')
+})
+fundoPopup.addEventListener('click', function(){
+    fundoPopup.style.display = 'none';
+})
