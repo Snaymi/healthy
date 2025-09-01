@@ -16,20 +16,14 @@ var fundoPopup = document.querySelector('.fundo');
 //toggleMenu
 
 //Função -> Rotina que deverá ser acionada
-function manipularMenu(){
-    //alert('Função acionada');
-    menu.classList.toggle('show');
-    btnMenu.classList.toggle('x');
-}
-
-function fecharMenu(){
-    menu.classList.remove('show');
-    btnMenu.classList.remove('x');
-}
 
 //Eventos -> Gatilhos/Ação do usuário
-btnMenu.addEventListener('click',manipularMenu);
-menu.addEventListener('click', function(){
+btnMenu.addEventListener('click', function() {
+    menu.classList.toggle('show');
+    btnMenu.classList.toggle('x');
+})
+
+menu.addEventListener('click', function() {
     menu.classList.remove('show')
     btnMenu.classList.remove('x')
 })

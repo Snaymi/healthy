@@ -77,7 +77,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .popup{
@@ -151,10 +151,21 @@ p{
     text-decoration: underline;
 }
 
+.slide1{
+    background-image: url(../img/background.webp);
+}
+.slide2{
+    background-image: url(../img/background-2.webp);
+}
+.slide3{
+    background-image: url(../img/background-3.webp);
+}
+.swiper-button-next , .swiper-button-prev{
+    display:none;
+}
 .banner{
     /*background-color: red;*/
     /*background-repeat: no-repeat;*/
-    background-image: url(../img/background.webp);
     background-size: cover;
     background-position: top center;
     height: calc(100vh - 105px); /*view height*/
@@ -378,6 +389,7 @@ p{
     /*Quando a barra for a filha de número 2*/
     .x .barra:nth-child(2){
         transform: translateX(-200px);
+        background-color:red;
         opacity: 0;
     }
     /*Quando a barra for a última filha de um elemento*/
